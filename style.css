@@ -1,50 +1,51 @@
 body {
     font-family: sans-serif;
-    margin: 10;
+    margin: 10px; /* Ajusta el margen según sea necesario */
     overflow: hidden;
 }
 
 #canvas-container {
-    width: 1000px;
-    height: 550px;
-    margin: 50px auto;
+    width: 90%; /* Ancho relativo al 90% del tamaño del viewport */
+    height: 50vh; /* Alto relativo al 50% de la altura del viewport */
+    margin: 20px auto; /* Margen vertical de 20px y centrado horizontal */
     border: 5px solid rgb(24, 153, 132);
 }
+
 #movable-div {
     position: absolute;
-    left: 800px;
-    top: 70px;
-    width: 300px; /* Ancho del div */
-    height: 140px; /* Alto del div */
-    padding: 50px;
+    left: 50%; /* Centrado horizontalmente */
+    top: 10%; /* Posición relativa al 10% de la altura del viewport */
+    transform: translateX(-50%); /* Centrado horizontalmente */
+    width: 90%; /* Ancho relativo al 90% del tamaño del viewport */
+    height: 30vh; /* Alto relativo al 30% de la altura del viewport */
+    padding: 5vw; /* Padding relativo al 5% del ancho del viewport */
     background-color: lightblue;
     display: none;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 2vw; /* Tamaño de fuente relativo al 2% del ancho del viewport */
     color: black;
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden; /* Para ocultar el texto que aparecerá gradualmente */
-    /* white-space: nowrap; Para evitar saltos de línea */
+    overflow: hidden;
     text-align: justify;
 }
 
-
 #movable-div p {
-    margin: 10px;
-    
-} 
+    margin: 1vw; /* Margen relativo al 1% del ancho del viewport */
+}
+
 #movable-div2 {
     position: absolute;
-    left: 800px;
-    top: 70px;
-    width: 300px;
-    height: 140px;
-    padding: 60px;
+    left: 50%; /* Centrado horizontalmente */
+    top: 50%; /* Centrado verticalmente */
+    transform: translate(-50%, -50%); /* Centrado horizontal y vertical */
+    width: 90%; /* Ancho relativo al 90% del tamaño del viewport */
+    height: 30vh; /* Alto relativo al 30% de la altura del viewport */
+    padding: 5vw; /* Padding relativo al 5% del ancho del viewport */
     background-color: lightblue;
     display: none;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 2vw; /* Tamaño de fuente relativo al 2% del ancho del viewport */
     color: black;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -53,15 +54,16 @@ body {
 }
 
 #movable-div2 p {
-    margin: 10px;
+    margin: 1vw; /* Margen relativo al 1% del ancho del viewport */
 }
 
 button {
     position: absolute;
-    left: 1000px; /* Controla la posición en X */
-    top: 400px; /* Controla la posición en Y */
-    padding: 10px 20px;
-    font-size: 16px;
+    left: 50%; /* Centrado horizontalmente */
+    bottom: 10%; /* Posición relativa al 10% de la altura del viewport */
+    transform: translateX(-50%); /* Centrado horizontalmente */
+    padding: 2vw 4vw; /* Padding relativo al 2% del ancho y 4% del alto del viewport */
+    font-size: 2vw; /* Tamaño de fuente relativo al 2% del ancho del viewport */
     background-color: #345266;
     color: #fff;
     border: none;
