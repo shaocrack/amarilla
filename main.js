@@ -29,8 +29,8 @@ function drawPetal(x, y, radius, startAngle, endAngle, color, texture) {
 function drawFlower(budSize, petalRadius, numPetals, rotationAngle, showFace) {
   // Dibujar el tallo
   ctx.beginPath();
-  ctx.moveTo(250, 500);
-  ctx.lineTo(250, 200 + budSize);
+  ctx.moveTo(200, 500);
+  ctx.lineTo(200, 200 + budSize);
   ctx.strokeStyle = "green";
   ctx.lineWidth = 20;
   ctx.stroke();
@@ -46,7 +46,7 @@ function drawFlower(budSize, petalRadius, numPetals, rotationAngle, showFace) {
     texture.src = "./img/yu4.png"; // Reemplaza con la URL de la textura
 
     // Calcular la posición del pétalo alrededor del centro de la flor con rotación
-    const petalX = 250 + petalRadius * Math.cos(angle);
+    const petalX = 180 + petalRadius * Math.cos(angle);
     const petalY = 200 + budSize + petalRadius * Math.sin(angle);
 
     // Dibujar el pétalo
@@ -55,7 +55,7 @@ function drawFlower(budSize, petalRadius, numPetals, rotationAngle, showFace) {
 
   // Dibujar el centro de la flor
   ctx.beginPath();
-  ctx.arc(250, 200 + budSize, 100, 0, Math.PI * 2, false);
+  ctx.arc(180, 200 + budSize, 100, 0, Math.PI * 2, false);
   ctx.fillStyle = "yellow";
   ctx.fill();
 
@@ -86,7 +86,7 @@ function animateFlower() {
      if (showFace) {
        const faceImg = new Image();
        faceImg.src = "./img/lo2.png"; // Reemplaza con la URL de la carita
-       ctx.drawImage(faceImg, 165, 115, 170, 170); // Ajusta las coordenadas y el tamaño según sea necesario
+       ctx.drawImage(faceImg, 95, 115, 170, 170); // Ajusta las coordenadas y el tamaño según sea necesario
      }
   }, 30);
 }
