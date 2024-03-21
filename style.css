@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    margin: 10;
+    overflow: hidden;
+}
+
+#canvas-container {
+    width: 1000px;
+    height: 550px;
+    margin: 50px auto;
+    border: 5px solid rgb(24, 153, 132);
+}
+#movable-div {
+    position: absolute;
+    left: 800px;
+    top: 70px;
+    width: 300px; /* Ancho del div */
+    height: 140px; /* Alto del div */
+    padding: 50px;
+    background-color: lightblue;
+    display: none;
+    font-family: inherit;
+    font-size: 20px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden; /* Para ocultar el texto que aparecerá gradualmente */
+    /* white-space: nowrap; Para evitar saltos de línea */
+    text-align: justify;
+}
+
+
+#movable-div p {
+    margin: 10px;
+    
+} 
+#movable-div2 {
+    position: absolute;
+    left: 800px;
+    top: 70px;
+    width: 300px;
+    height: 140px;
+    padding: 60px;
+    background-color: lightblue;
+    display: none;
+    font-family: inherit;
+    font-size: 20px;
+    color: black;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+#movable-div2 p {
+    margin: 10px;
+}
+
+button {
+    position: absolute;
+    left: 1000px; /* Controla la posición en X */
+    top: 400px; /* Controla la posición en Y */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #345266;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
