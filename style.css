@@ -40,7 +40,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Ancho del div */
+    width: 90%; /* Ancho del div */
     max-width: 300px; /* Ancho máximo para evitar que se extienda demasiado en pantallas grandes */
     height: 140px; /* Alto del div */
     padding: 30px;
@@ -74,10 +74,10 @@ button {
 }
 
 /* Media queries para dispositivos móviles */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     #movable-div,
     #movable-div2 {
-        width: 100%;
+        width: 150%;
     }
 
     button {
